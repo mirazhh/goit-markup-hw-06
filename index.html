@@ -515,10 +515,43 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="button-close-modal" data-modal-close>
-        </button>
-        <p class="leave-the-details-text">Оставьте свои данные, мы вам перезвоним</p>
+        <form class=""  autocomplete="on">
+          <div class="form-field">
+            <button class="button-close-modal" data-modal-close>
+            </button>
+            <div class="leave-the-details-wrapper">
+              <p class="leave-the-details-text">Оставьте свои данные, мы вам перезвоним</p>
+            </div> 
+            <div class="name-field form-field">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name" placeholder="Иван Иванов">
+              </div>
+              <div class="tel-field form-field">
+                <label for="tel">Телефон</label>
+                <input type="tel" name="name" id="tel" placeholder="+370-11111111">
+              </div>
+              <div class="mail-field form-field">
+                <label for="mail">Почта</label>
+                <input type="email" name="name" id="mail" placeholder="mail@email.com">
+              </div>
+              <div class="comment-field form-field">
+                <label for="comment">Комментарий</label>
+                <textarea  name="comment"  id="comment" rows="5" placeholder="Комментарий"></textarea>
+              </div>
+              <div class="licence-field form-field">
+                <input type="checkbox" name="licence" value="" id="licence">
+                <label for="licence"><span>Соглашаюсь с рассылкой и принимаю</span><span>Условия договора</span></label>
+              </div>
+              <div>
+                <button type="submit">Отправить
+                </button>
+              </div>
+          </div>
+        </form>
+      </div>
     </div>
+
+   
 
     <script src="./js/modal.js"></script>
   </body>
