@@ -515,37 +515,41 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class=""  autocomplete="on">
-          <div class="form-field">
+        <form class="modal-form"  autocomplete="off">
+          <div class="">
             <button class="button-close-modal" data-modal-close>
             </button>
             <div class="leave-the-details-wrapper">
               <p class="leave-the-details-text">Оставьте свои данные, мы вам перезвоним</p>
             </div> 
+           
             <div class="name-field form-field">
-                <label for="name">Имя</label>
-                <input type="text" name="name" id="name" placeholder="Иван Иванов">
-              </div>
-              <div class="tel-field form-field">
-                <label for="tel">Телефон</label>
-                <input type="tel" name="name" id="tel" placeholder="+370-11111111">
-              </div>
-              <div class="mail-field form-field">
-                <label for="mail">Почта</label>
-                <input type="email" name="name" id="mail" placeholder="mail@email.com">
-              </div>
-              <div class="comment-field form-field">
-                <label for="comment">Комментарий</label>
-                <textarea  name="comment"  id="comment" rows="5" placeholder="Комментарий"></textarea>
-              </div>
-              <div class="licence-field form-field">
+              <input type="text" class="form-field-input"  name="name" id="name" placeholder=" ">
+              <label for="name" class="form-field-label">Имя</label>
+              <span class="icon-name icon"></span>
+            </div>
+            <div class="tel-field form-field">
+              <input type="tel" class="form-field-input" name="name" id="tel" placeholder=" ">
+              <label for="tel" class="form-field-label">Телефон</label>
+              <span class="icon-tel icon"></span>
+            </div>
+            <div class="mail-field form-field"> 
+              <input type="email" class="form-field-input" name="name" id="mail" placeholder=" ">
+              <label for="mail" class="form-field-label">Почта</label>
+              <span class="icon-mail icon"></span>
+            </div>
+            <div class="comment-field form-field">
+              <textarea  class="form-field-input comment-field-input"  name="comment"  id="comment" rows="5" placeholder=" "></textarea>
+              <label for="comment" class="form-field-label comment-label">Комментарий</label>
+            </div>
+
+            <div class="licence-field">
                 <input type="checkbox" name="licence" value="" id="licence">
-                <label for="licence"><span>Соглашаюсь с рассылкой и принимаю</span><span>Условия договора</span></label>
-              </div>
-              <div>
-                <button type="submit">Отправить
-                </button>
-              </div>
+                <label for="licence" class="licence-label"><span>Соглашаюсь с рассылкой и принимаю</span><span> Условия договора </span></label>
+            </div>
+            <button type="submit" class="submit-button"  aria-label="Отправить">Отправить
+              </button>
+
           </div>
         </form>
       </div>
