@@ -592,7 +592,7 @@ textarea {
 }
 
 .constant-clients-section-svg {
-  fill: var(--social-links-svg-main-color);
+    fill: var(--social-links-svg-main-color);
 }
 
 .constant-clients-section-logo:hover svg{
@@ -937,15 +937,24 @@ textarea {
     transform: translateY(-36px);
 }
 
-.icon {
+
+.form-icon-svg {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
     display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-color: var(--light-grey-text-color);
+
+    width: 18px;
+    height: 18px;
+    
+    fill: var(--dark-grey-text-color);
+    transition-property: fill;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.form-field:focus svg{
+    fill: var(--dark-theme-text-color);
 }
 
 .icon-name {
@@ -959,8 +968,9 @@ textarea {
 .icon-mail {
     left: 17px;
 }
-.form-field-input:focus ~ .icon {
-    background-color:var(--accent-blue-color) ;
+
+.form-field-input:focus ~ .form-icon-svg {
+   fill:var(--accent-blue-color);
 }
 
 .comment-field {
@@ -979,11 +989,25 @@ textarea {
     padding-left: 57px ;
 }
 
-.licence-label {
+
+.form-licence-label {
+    display: block;
     font-weight: normal;
     line-height: 1.714px;
     letter-spacing: 0.03em;
     color: var(--light-grey-text-color);
+    outline: 1px solid tomato;
+}
+
+/*.icon-form-check {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+}*/
+
+.form-licence-label:checked {
+    fill: var(--accent-blue-color);
 }
 
 .submit-button {

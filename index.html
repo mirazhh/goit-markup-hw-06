@@ -526,17 +526,26 @@
             <div class="name-field form-field">
               <input type="text" class="form-field-input"  name="name" id="name" placeholder=" ">
               <label for="name" class="form-field-label">Имя</label>
-              <span class="icon-name icon"></span>
+              <svg class="icon-name form-icon-svg">
+                <use href="./images/sprite.svg#icon-name">
+                </use>
+              </svg>
             </div>
             <div class="tel-field form-field">
               <input type="tel" class="form-field-input" name="name" id="tel" placeholder=" ">
               <label for="tel" class="form-field-label">Телефон</label>
-              <span class="icon-tel icon"></span>
+              <svg class="icon-tel form-icon-svg">
+                <use href="./images/sprite.svg#icon-tel">
+                </use>
+              </svg>
             </div>
             <div class="mail-field form-field"> 
               <input type="email" class="form-field-input" name="name" id="mail" placeholder=" ">
               <label for="mail" class="form-field-label">Почта</label>
-              <span class="icon-mail icon"></span>
+              <svg class="icon-mail form-icon-svg">
+                <use href="./images/sprite.svg#icon-mail">
+                </use>
+              </svg>
             </div>
             <div class="comment-field form-field">
               <textarea  class="form-field-input comment-field-input"  name="comment"  id="comment" rows="5" placeholder=" "></textarea>
@@ -544,8 +553,15 @@
             </div>
 
             <div class="licence-field">
-                <input type="checkbox" name="licence" value="" id="licence">
-                <label for="licence" class="licence-label"><span>Соглашаюсь с рассылкой и принимаю</span><span> Условия договора </span></label>
+              <label for="licence" class="form-licence-label">
+              <input type="checkbox" class="form-licence-checkbox"  name="licence" value="" id="licence">
+                <span>Соглашаюсь с рассылкой и принимаю</span>
+                <span> Условия договора </span>
+              </label>
+              <svg class="icon-form-check form-icon-svg">
+                <use href="./images/sprite.svg#icon-check">
+                </use>
+              </svg>
             </div>
             <button type="submit" class="submit-button"  aria-label="Отправить">Отправить
               </button>
