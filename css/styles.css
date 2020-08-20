@@ -91,6 +91,7 @@ textarea {
     display: flex;
     align-items: center;
 }
+
 .web-studio-menu {
     display: flex; 
     align-items: center;
@@ -245,7 +246,8 @@ textarea {
 
 .hero-section-button {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     display: block;
     margin-left: auto;
@@ -271,6 +273,7 @@ textarea {
 .hero-section-button:focus {
     color: var(--dark-theme-text-color) /*#FFFFFF*/;
     background-color: var(--accent-blue-color) /*#2196F3*/;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*Our strengths section*/
@@ -778,7 +781,9 @@ textarea {
 .footer-box-container {
     display: flex;
     align-items: center;
+    /*justify-content: space-between;*/
 }
+
 
 .footer-box-contacts {
     margin-right: 69px;
@@ -795,7 +800,7 @@ textarea {
 
 .footer-contacts-item-link {
     font-weight: 400; /*normal*/
-    font-style: normal;/*deletes automatic italic of link*/
+    font-style: normal;/*deletes itali*/
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.03em;
@@ -810,10 +815,24 @@ textarea {
 }
 
 .join-us-text {
+    font-weight: 700; /*bold*/
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--dark-theme-text-color) /*#FFFFFF*/;
+
     margin-bottom: 20px;
+
+    text-transform: uppercase;
 }
 
-.join-us-text {
+
+.sign-up-form {
+    display: flex;
+    align-items: center;
+}
+
+.sign-up-text {
     font-weight: 700; /*bold*/
     font-size: 14px;
     line-height: 1.14;
@@ -822,6 +841,38 @@ textarea {
     color: var(--dark-theme-text-color) /*#FFFFFF*/;
 }
 
+.sign-up-button {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-right: 62px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+
+    font-weight: 700;/*bold*/
+    font-size: 16px;
+    line-height: 1.875;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: var(--accent-blue-color);
+    border: 0px;
+    border-radius: 4px;
+}
+
+.sign-up-button:hover,
+.sign-up-button:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.sign-up-form-textarea {
+    min-width: 358px;
+    min-height: 50px;
+}
 
 /*Backdrop css*/
 
@@ -953,8 +1004,8 @@ textarea {
 }
 
 
-.form-field:focus svg{
-    fill: var(--dark-theme-text-color);
+.form-field:focus .form-icon-svg {
+    fill: var(--accent-blue-color);
 }
 
 .icon-name {
@@ -966,11 +1017,7 @@ textarea {
 }
 
 .icon-mail {
-    left: 17px;
-}
-
-.form-field-input:focus ~ .form-icon-svg {
-   fill:var(--accent-blue-color);
+ left: 17px;
 }
 
 .comment-field {
@@ -986,29 +1033,64 @@ textarea {
 
 .licence-field {
     margin-bottom: 30px;
-    padding-left: 57px ;
+   padding-left: 54px;
 }
 
+.icon-check {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+
+    border: 2px solid #212121;
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-licence-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+}
 
 .form-licence-label {
-    display: block;
+    display: inline-block;
+}
+ 
+.agree-text {
     font-weight: normal;
     line-height: 1.714px;
     letter-spacing: 0.03em;
     color: var(--light-grey-text-color);
-    outline: 1px solid tomato;
 }
 
-/*.icon-form-check {
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    border: 2px solid black;
-}*/
-
-.form-licence-label:checked {
-    fill: var(--accent-blue-color);
+.agreement-link {
+    color: var(--accent-blue-color);
+    text-decoration: underline;
 }
+
+.form-licence-checkbox:checked + .icon-check{
+    border-color: transparent;
+    background-color: var(--accent-blue-color);
+    background-image: url(../images/Check/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+}
+
+.label {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-licence-checkbox:checked ~ .label {
+    transform: translateY(-20px);
+}
+
 
 .submit-button {
     display: flex;
@@ -1030,5 +1112,5 @@ textarea {
    border: 0px;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
-
 }
+

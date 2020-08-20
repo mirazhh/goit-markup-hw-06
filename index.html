@@ -510,6 +510,17 @@
             </li>
           </ul>
         </div>
+
+        <div class="sign-up-form">
+          <b class="sign-up-text">подпишитесь на рассылку</b>
+          <form class="sign-up-form-section">
+            <textarea name="" id="" cols="" rows="" class="sign-up-form-textarea">
+            </textarea>
+            <button type="submit"  class="sign-up-button">
+              Подписаться
+            </button>
+          </form>
+        </div>
       </div> 
     </footer>
 
@@ -553,15 +564,15 @@
             </div>
 
             <div class="licence-field">
-              <label for="licence" class="form-licence-label">
-              <input type="checkbox" class="form-licence-checkbox"  name="licence" value="" id="licence">
-                <span>Соглашаюсь с рассылкой и принимаю</span>
-                <span> Условия договора </span>
+              <label for="licence" class="">
+              <input type="checkbox" class="form-licence-checkbox"  name="licence" value="" id="licence" required>
+                <span class="icon-check"></span>
+                <span class="agree-text">Соглашаюсь с рассылкой и принимаю</span>
+                <a>
+                  <span class="agreement-link"> Условия договора 
+                  </span>
+                </a>
               </label>
-              <svg class="icon-form-check form-icon-svg">
-                <use href="./images/sprite.svg#icon-check">
-                </use>
-              </svg>
             </div>
             <button type="submit" class="submit-button"  aria-label="Отправить">Отправить
               </button>
