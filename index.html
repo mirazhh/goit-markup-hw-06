@@ -514,58 +514,68 @@
         <div class="sign-up-form">
           <b class="sign-up-text">подпишитесь на рассылку</b>
           <form class="sign-up-form-section">
-            <textarea name="" id="" cols="" rows="" class="sign-up-form-textarea">
-            </textarea>
-            <button type="submit"  class="sign-up-button">
+            <textarea  type="email"  name="sign-up-user-email"  id=""  class="sign-up-form-textarea" placeholder="E-mail"></textarea>
+            <div class="button-wrapper">
+              <button type="submit"  class="sign-up-button">
               Подписаться
-            </button>
+              <span>
+                <svg class="icon-send-svg">
+                  <use href="./images/sprite.svg#icon-send">
+                  </use>
+                </svg>
+                </span>
+              </button>
+            </div>
           </form>
         </div>
+
       </div> 
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="modal-form"  autocomplete="off">
-          <div class="">
-            <button class="button-close-modal" data-modal-close>
-            </button>
             <div class="leave-the-details-wrapper">
-              <p class="leave-the-details-text">Оставьте свои данные, мы вам перезвоним</p>
+              <h2 class="leave-the-details-text">Оставьте свои данные, мы вам перезвоним</h2>
             </div> 
-           
+            <button type="button"  class="modal-close-button" data-modal-close>
+              <svg class="icon-close-svg">
+                <use href="./images/sprite.svg#icon-close">
+                </use>
+              </svg>
+            </button>
             <div class="name-field form-field">
-              <input type="text" class="form-field-input"  name="name" id="name" placeholder=" ">
+              <input type="text" class="form-field-input"  name="user-name" id="name" placeholder=" ">
               <label for="name" class="form-field-label">Имя</label>
-              <svg class="icon-name form-icon-svg">
+              <svg class="icon-name-svg form-icon-svg">
                 <use href="./images/sprite.svg#icon-name">
                 </use>
               </svg>
             </div>
             <div class="tel-field form-field">
-              <input type="tel" class="form-field-input" name="name" id="tel" placeholder=" ">
+              <input type="tel" class="form-field-input" name="user-tel" id="tel" placeholder=" ">
               <label for="tel" class="form-field-label">Телефон</label>
-              <svg class="icon-tel form-icon-svg">
+              <svg class="icon-tel-svg form-icon-svg">
                 <use href="./images/sprite.svg#icon-tel">
                 </use>
               </svg>
             </div>
             <div class="mail-field form-field"> 
-              <input type="email" class="form-field-input" name="name" id="mail" placeholder=" ">
+              <input type="email" class="form-field-input" name="user-mail" id="mail" placeholder=" ">
               <label for="mail" class="form-field-label">Почта</label>
-              <svg class="icon-mail form-icon-svg">
+              <svg class="icon-mail-svg form-icon-svg">
                 <use href="./images/sprite.svg#icon-mail">
                 </use>
               </svg>
             </div>
             <div class="comment-field form-field">
-              <textarea  class="form-field-input comment-field-input"  name="comment"  id="comment" rows="5" placeholder=" "></textarea>
+              <textarea  class="form-field-input comment-field-input"  name="user-comment"  id="comment" rows="5" placeholder=" "></textarea>
               <label for="comment" class="form-field-label comment-label">Комментарий</label>
             </div>
 
             <div class="licence-field">
-              <label for="licence" class="">
-              <input type="checkbox" class="form-licence-checkbox"  name="licence" value="" id="licence" required>
+              <label for="licence" class="licence-filed-label">
+              <input type="checkbox" class="form-licence-checkbox"  name="licence" value="licence-policy" id="licence" required>
                 <span class="icon-check"></span>
                 <span class="agree-text">Соглашаюсь с рассылкой и принимаю</span>
                 <a>
