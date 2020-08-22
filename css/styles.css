@@ -855,8 +855,10 @@ textarea {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     display: inline-flex;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    /*margin-left: auto;
+    margin-right: auto;*/
     padding-top: 10px;
     padding-right: 28px;
     padding-bottom: 10px;
@@ -879,11 +881,6 @@ textarea {
 .sign-up-button:hover,
 .sign-up-button:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.button-wrapper {
-    display: block;
-    align-items: center;
 }
 
 .icon-send-svg {
@@ -956,7 +953,7 @@ textarea {
     animation-name: backInLeft;
     animation-duration: 500ms;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding-top: 40px;
+    /*padding-top: 40px;*/
         
     min-width: 528px;
     min-height: 581px;
@@ -968,24 +965,19 @@ textarea {
 
 .modal-close-button {
     position: absolute;
+    display: flex;
     top: 8px;
     right: 8px;
     width: 30px;
     height: 30px;
-   /* display: flex;
     justify-content: center;
-    align-items: center;*/
-    background-repeat: no-repeat;
-    background-position: center;
+    align-items: center;
     border-radius: 50%;
     background-color: transparent;
-    border: 1px solid black;
-    cursor: pointer;
+    cursor: pointer;ight: 30px;
 }
 
 .icon-close-svg {
-    width: 30px;
-    height: 30px;
     fill: var(--social-links-svg-main-color);
     transition-property: fill;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1002,6 +994,7 @@ textarea {
 .modal-form {
     display: flex;
     flex-direction: column;
+    padding: 40px;
 }
 
 .leave-the-details-text {
@@ -1051,7 +1044,6 @@ textarea {
     color: var(--accent-blue-color);
     transform: translateY(-40px);
 }
-
 
 .form-field-input:focus {
     outline: none;
@@ -1113,7 +1105,7 @@ textarea {
 
 .licence-field {
     margin-bottom: 30px;
-    padding-left: 54px;
+    /*padding-left: 54px;*/
 }
 
 .icon-check {
