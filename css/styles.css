@@ -1101,10 +1101,10 @@ textarea {
 
     width: 18px;
     height: 18px;
-    /*fill: var(--dark-grey-text-color);*/
+    fill: var(--dark-grey-text-color);
 }
 
-.form-field:focus  ~ .form-icon-svg{
+.form-field-input:focus  ~ .form-icon-svg{
     fill: var(--accent-blue-color);
 }
 
