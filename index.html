@@ -512,8 +512,8 @@
 
         <div class="sign-up-form">
           <b class="sign-up-text">подпишитесь на рассылку</b>
-          <form class="sign-up-form-section">
-            <textarea  type="email"  name="sign-up-user-email"  id=""  class="sign-up-form-textarea" placeholder="E-mail"></textarea>
+          <form class="sign-up-form-section" autocomplete="off">
+            <input type="email" class="sign-up-form-input"  name="sign-up-user-email" id="sign-up-user-mail" placeholder="E-mail" required>
               <button type="submit"  class="sign-up-button">
               Подписаться
               <span>
@@ -531,16 +531,16 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <button type="button"  class="modal-close-button" data-modal-close>
+          <svg class="icon-close-svg">
+            <use href="./images/sprite.svg#icon-close">
+            </use>
+          </svg>
+        </button>
         <form action=" "  class="modal-form"  autocomplete="off">
             <div class="leave-the-details-wrapper">
               <h2 class="leave-the-details-text">Оставьте свои данные, мы вам перезвоним</h2>
             </div> 
-            <button type="button"  class="modal-close-button" data-modal-close>
-              <svg class="icon-close-svg">
-                <use href="./images/sprite.svg#icon-close">
-                </use>
-              </svg>
-            </button>
             <div class="name-field form-field">
               <input type="text" class="form-field-input"  name="user-name" id="name" placeholder=" " required>
               <label for="user-name" class="form-field-label">Имя</label>
@@ -570,8 +570,13 @@
             </div>
             <div class="licence-field">
               <label for="licence" class="licence-field-label">
-              <input type="checkbox" class="form-licence-checkbox"  name="licence" value="licence-policy" id="licence" required>
-                <span class="icon-check"></span>
+                <input type="checkbox" class="form-licence-checkbox"  name="licence" value="licence-policy" id="licence" required>
+                <span class="icon-check">
+                <svg class="icon-check-svg">
+                  <use href="./images/sprite.svg#icon-check">
+                  </use>
+                </svg>
+                </span>
                 <span class="agree-text">Соглашаюсь с рассылкой и принимаю</span>
                 <a class="agreement-link" href=" ">
                   <span class="agreement-document"> Условия договора 
