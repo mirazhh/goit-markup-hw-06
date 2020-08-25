@@ -1157,6 +1157,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  vertical-align: center;
 }
 
 .form-licence-checkbox {
@@ -1183,7 +1184,7 @@ textarea {
 .icon-check-svg {
   width: 16px;
   height: 15px;
-  transform: translate(-10%, -10%);
+  transform: translate(-13%, -12%);
 }
 
 .form-licence-checkbox:checked  ~ .icon-check {
